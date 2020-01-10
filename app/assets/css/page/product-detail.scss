@@ -1,0 +1,105 @@
+@import "../color";
+@import "../mixin";
+
+.product-detail-page {
+  padding-bottom: 70px;
+
+  .img {
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+
+    img {
+      width: 100vw;
+      height: 100vw;
+    }
+
+    .float-home-icon {
+      left: 15px;
+      top: 15px;
+    }
+  }
+
+  .title {
+    width: 100%;
+    height: 120px;
+    padding: 15px 20px;
+    background: #fff;
+
+    .price {
+      font-family: PingFangSC-Semibold;
+      font-size: 20px;
+      color: #EF6100;
+      line-height: 20px;
+    }
+
+    p {
+      margin-top: 15px;
+      font-family: STSongti-SC-Black;
+      font-size: 22px;
+      color: #333;
+      letter-spacing: 0.5px;
+      line-height: 27px;
+      height: 54px;
+      @include multi-line(2);
+    }
+  }
+
+  .company {
+    width: 100%;
+    margin-top: 10px;
+    height: 45px;
+    padding: 7px 20px;
+    background: #fff;
+    display: flex;
+
+    img {
+      flex: 0 0 30px;
+      height: 30px;
+      border-radius: 4px;
+    }
+
+    p {
+      flex: 1;
+      line-height: 30px;
+      overflow: hidden;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #333;
+      padding-left: 5px;
+    }
+  }
+
+  .content {
+    margin-top: 10px;
+    background: #fff;
+    padding: 15px 20px;
+
+    .inner-content {
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      line-height: 25px;
+
+      p {
+        text-align: justify;
+        text-indent: 2em;
+      }
+    }
+  }
+
+  .btn-share {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: $primary-color;
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+}

@@ -1,0 +1,57 @@
+@import "../color";
+
+.agreement-preview-page {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+
+  .preview {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: scroll;
+    background: $bg-grey;
+
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .btm {
+    width: 100%;
+    height: 100px;
+    padding: 0 15px;
+    border-top: 1px solid $line-grey;
+
+    .agreement-chk {
+
+      .am-checkbox-agree-label {
+        .am-checkbox-checked {
+          .am-checkbox-inner {
+            background: $primary-color;
+            border-color: $primary-color;
+          }
+        }
+
+        a {
+          font-size: 15px;
+          color: $primary-color;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      height: 50px;
+      background: $primary-color;
+      line-height: 50px;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      background: $primary-color;
+      border-radius: 8px;
+    }
+  }
+
+}

@@ -1,0 +1,89 @@
+@import "../color";
+
+
+.home-wrap {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: padding-top 0.8s;
+  padding-bottom: 50px;
+  height: 100vh;
+  overflow: scroll;
+
+  .inner-page {
+
+  }
+
+  .menu-btm {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    max-width: 750px;
+    bottom: 0;
+    z-index: 2;
+    height: 50px;
+
+    a {
+      text-decoration: none;
+      color: #4c4948;
+    }
+
+    a.cur {
+      color: #01589d;
+    }
+
+    ul {
+      width: 100%;
+      height: 50px;
+      display: flex;
+
+      li {
+        flex: 1;
+        text-align: center;
+
+        .icon {
+          position: relative;
+          width: 22px;
+          height: 22px;
+          left: 50%;
+          margin-left: -11px;
+          margin-top: 5px;
+        }
+
+        p {
+          height: 20px;
+          line-height: 20px;
+          margin-top: 3px;
+          color: #999;
+        }
+
+        .cur {
+          p {
+            color: $primary-color;
+          }
+        }
+      }
+
+      li:nth-child(1) .icon {
+        background: url("../../image/common/icon_btm_home.png") no-repeat;
+        background-size: contain;
+      }
+
+      li:nth-child(1) .cur .icon {
+        background: url("../../image/common/icon_btm_home_active.png") no-repeat;
+        background-size: contain;
+      }
+
+      li:nth-child(2) .icon {
+        background: url("../../image/common/icon_btm_profile.png") no-repeat;
+        background-size: contain;
+      }
+
+      li:nth-child(2) .cur .icon {
+        background: url("../../image/common/icon_btm_profile_active.png") no-repeat;
+        background-size: contain;
+      }
+
+    }
+  }
+
+}

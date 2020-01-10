@@ -1,0 +1,143 @@
+@import "../color";
+
+.profile-page {
+  padding-bottom: 20px;
+
+  .brief-info {
+    width: 100%;
+    background: #fff;
+    padding: 5px 0;
+    display: flex;
+
+    .left {
+      flex: 1;
+
+      .name {
+        font-size: 16px;
+        color: #333333;
+        line-height: 30px;
+      }
+
+      .descr {
+        font-size: 14px;
+        color: #999;
+        line-height: 30px;
+        padding-left: 20px;
+
+        background: url("../../image/common/icon_guard.png") center left no-repeat;
+        background-size: 12px;
+      }
+    }
+
+    .status {
+      flex: 0 0 60px;
+      text-align: right;
+      line-height: 60px;
+
+      .status_ok {
+        color: #42D35A;
+      }
+
+      .status_fail {
+        color: #FF352B;
+      }
+    }
+  }
+
+  ul {
+    background: #FFFFFF;
+    margin-bottom: 7px;
+
+    li {
+      position: relative;
+      width: 100%;
+      padding: 0 15px;
+      min-height: 50px;
+      display: flex;
+      line-height: 50px;
+      font-size: 14px;
+
+      .label {
+        flex: 0 0 80px;
+        color: #777;
+
+
+      }
+
+      .value {
+        flex: 1;
+        text-align: right;
+      }
+
+      .input {
+        flex: 1;
+        height: 40px;
+        line-height: 40px;
+        margin: 5px 0;
+        padding: 0 3px;
+        border: none;
+        text-align: end;
+      }
+
+      label {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        height: 50px;
+        left: 0;
+        padding-right: 30px;
+        text-align: right;
+        font-size: 14px;
+      }
+
+      .hiddeninput {
+        flex: 1;
+        z-index: 2;
+        height: 50px;
+        opacity: 0;
+        border: none;
+        background: none;
+      }
+
+      .more {
+        flex: 0 0 45px;
+        text-align: right;
+        color: $primary-color;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        width: 200%;
+        height: 1px;
+        background: #eee;
+        transform: scale(0.5);
+
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+    }
+  }
+
+  .btn-ok {
+    width: 90%;
+    margin: 20px 5%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    background: $primary-color;
+    border-radius: 8px;
+  }
+
+}

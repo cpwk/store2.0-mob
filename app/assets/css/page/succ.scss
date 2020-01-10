@@ -1,0 +1,40 @@
+@import "../color";
+
+.succ-page {
+  padding-bottom: 20px;
+  background: #fff;
+  height: 100vh;
+  padding-top: 90px;
+
+  .icon {
+    position: relative;
+    left: 50%;
+    margin-left: -45px;
+    width: 90px;
+    height: 90px;
+    background: url("../../image/common/icon_succ.png") center no-repeat;
+    background-size: contain;
+  }
+
+  .tip {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .btn-ok {
+    width: 90%;
+    margin: 90px 5% 0 5%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    background: $primary-color;
+    border-radius: 8px;
+  }
+
+}

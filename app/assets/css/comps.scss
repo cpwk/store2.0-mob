@@ -1,0 +1,177 @@
+@import "color";
+@import "mixin";
+
+.nodata {
+  position: relative;
+  width: 130px;
+  top: 40px;
+  left: 50%;
+  margin-left: -65px;
+
+  img {
+    width: 130px;
+  }
+
+  p {
+    text-align: center;
+    line-height: 30px;
+    color: $font-gray;
+  }
+}
+
+
+.banner-carousel {
+  width: 100vw;
+  height: 56vw;
+  z-index: 1;
+
+  img {
+    height: 56vw;
+    width: 100vw;
+  }
+
+  .am-carousel-wrap {
+    text-align: right;
+    padding-right: 10px;
+
+    .am-carousel-wrap-dot {
+      span {
+        display: block;
+        width: 10px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .am-carousel-wrap-dot-active {
+      span {
+        background: #FFFFFF;
+      }
+    }
+  }
+}
+
+
+.ul-product-list {
+  width: 100%;
+  padding: 15px 4vw;
+
+  li {
+    float: left;
+    width: 44vw;
+    margin-right: 4vw;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 15px;
+
+    .img {
+      width: 44vw;
+      height: 44vw;
+    }
+
+    .info {
+      width: 100%;
+      height: 70px;
+      padding: 4px;
+
+      .title {
+        width: 100%;
+        height: 40px;
+        line-height: 20px;
+        @include multi-line(2);
+        font-size: 14px;
+        font-weight: 500;
+        font-family: STSongti-SC-Black;
+      }
+
+      .price {
+        font-family: PingFangSC-Semibold;
+        font-size: 15px;
+        color: #EF6100;
+        text-align: right;
+        line-height: 20px;
+        padding-right: 7px;
+      }
+    }
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+  }
+}
+
+.float-home-icon {
+  position: fixed;
+  right: 20px;
+  bottom: 170px;
+  width: 30px;
+  height: 30px;
+  background: url("../image/common/icon_float_home.png") center no-repeat;
+  background-size: contain;
+
+}
+
+.cross-title {
+  position: relative;
+  width: 100%;
+  background: #FFFFFF;
+  height: 50px;
+  line-height: 50px;
+
+  .block {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -120px;
+    border-bottom: 1px solid $font-default;
+    width: 240px;
+    height: 25px;
+  }
+
+  .txt {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    left: 50%;
+    margin-left: -50px;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-family: PingFangSC-Semibold;
+    color: #333;
+
+  }
+}
+
+.guide-modal {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 200;
+
+  .bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 120vh;
+    width: 120vw;
+    margin-left: -10vw;
+    margin-top: -10vh;
+    backdrop-filter: blur(5px) brightness(110%);
+  }
+
+  .share {
+    z-index: 201;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    width: 220px;
+    height: 151px;
+  }
+}

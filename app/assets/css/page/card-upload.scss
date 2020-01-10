@@ -1,0 +1,95 @@
+@import "../color";
+
+.card-upload-page {
+  width: 100vw;
+  height: 100vh;
+  background: $primary-color;
+  position: relative;
+
+  .tip {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .card {
+    position: relative;
+    left: 50%;
+    margin-left: -137px;
+    margin-bottom: 15px;
+    width: 275px;
+    height: 180px;
+    background: url("../../image/info/bg_face.png") center no-repeat;
+    background-size: contain;
+
+    input {
+      width: 275px;
+      height: 180px;
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: alpha(opacity=0);
+      opacity: 0;
+      background: none;
+      border: none;
+    }
+
+    img {
+      width: 275px;
+      height: 180px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .btn {
+      width: 100%;
+      height: 25px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: rgba(50, 50, 50, 0.7);
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+      line-height: 25px;
+    }
+
+  }
+
+  .card-back {
+    background: url("../../image/info/bg_back.png") center no-repeat;
+    background-size: contain;
+  }
+
+  .btm {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    margin-left: -178px;
+    width: 355px;
+    height: 115px;
+    background: url("../../image/info/card_tip.png") center no-repeat;
+    background-size: contain;
+  }
+
+  .btn {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    background: #000;
+  }
+
+  .btn-disabled {
+    background: rgba(50, 50, 50, 0.7);
+  }
+
+}

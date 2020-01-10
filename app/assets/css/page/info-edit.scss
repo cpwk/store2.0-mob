@@ -1,0 +1,144 @@
+@import "../color";
+
+.info-edit-page {
+  padding-bottom: 20px;
+
+  .brief-info {
+    background: #fff;
+    padding: 15px;
+
+    p {
+      font-size: 16px;
+      color: #333333;
+      line-height: 30px;
+      background: url("../../image/common/icon_guard.png") center left no-repeat;
+      background-size: 12px;
+      padding-left: 20px;
+    }
+
+  }
+
+  ul {
+    background: #FFFFFF;
+    margin-top: 7px;
+
+    li {
+      position: relative;
+      width: 100%;
+      padding: 0 15px;
+      min-height: 50px;
+      display: flex;
+      line-height: 50px;
+      font-size: 14px;
+
+      span {
+        flex: 0 0 80px;
+        color: #777;
+      }
+
+      .input {
+        flex: 1;
+        height: 40px;
+        line-height: 40px;
+        margin: 5px 0;
+        padding: 0 3px;
+        border: none;
+        text-align: end;
+      }
+
+      label {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        height: 50px;
+        left: 0;
+        padding-right: 30px;
+        text-align: right;
+        font-size: 14px;
+      }
+
+      .hiddeninput {
+        flex: 1;
+        z-index: 2;
+        height: 50px;
+        opacity: 0;
+        border: none;
+        background: none;
+      }
+
+      p {
+        flex: 1;
+        text-align: right;
+        padding-right: 10px;
+      }
+
+      o {
+        position: absolute;
+        right: 30px;
+        height: 50px;
+        line-height: 50px;
+        color: $primary-color;
+      }
+
+      i {
+        flex: 0 0 10px;
+        display: block;
+        margin: 16px 0;
+        width: 10px;
+        height: 17px;
+        background: url("../../image/common/li_arrow_right.png") center no-repeat;
+        background-size: contain;
+      }
+
+      textarea {
+        width: 100%;
+        height: 81px;
+        padding: 3px;
+        line-height: 40px;
+        font-size: 14px;
+        margin: 2px;
+        border: none;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        width: 200%;
+        height: 1px;
+        background: #eee;
+        transform: scale(0.5);
+
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+    }
+  }
+
+  .btn-ok {
+    width: 90%;
+    margin: 20px 5%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    background: $primary-color;
+    border-radius: 8px;
+  }
+
+}
+
+.date-picker-list .am-list-item .am-list-line .am-list-extra {
+  flex-basis: initial;
+}
+
+
